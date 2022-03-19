@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!-- WEB CALCULATOR: Adds two numbers together.-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src=script.js></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Web Calculator</h1>
+        <h4 id="instructions">Add ANY two numbers, below:</h4>
+        <input type="number" id="input1">
+        <span id="plus"> + </span>
+        <input type="number" id="input2">
+        <input type="submit" value="=" id="submitButton" onclick="addNumbers()">
+        <input type="submit" value="clear" id="clearButton" onclick="clearAll()">
+        <div id="results"></div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
