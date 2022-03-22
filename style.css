@@ -46,7 +46,7 @@ input {
     background-color: rgb(252, 252, 232);
 }
 
-#plus{
+#operation{
     grid-area: plus;
     justify-self: center;
     padding: 0 10px;

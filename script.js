@@ -16,3 +16,17 @@ function clearAll(){
     document.getElementById('input2').value = '';
     document.getElementById('results').innerHTML = '';
 }
+
+function chooseOperation(){
+    var operator = document.getElementById('operation').value;
+    if (operator == '+') {
+        operator = '-'
+    } else if (operator == '-') {
+        operator = 'x'
+    } else if (operator == 'x') {
+        operator = '/'
+    } else {
+        operator = '+'
+    };
+    return operator;
+}
