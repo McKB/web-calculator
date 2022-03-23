@@ -1,6 +1,7 @@
 
 // function doMath() takes two values from input fields, stores them
-// in variables. Then them together and store this value in another variable. 
+// in variables. It gets the value of the operation input field from
+// the user, then performs the appropriate calculation.  
 // The result is displyed on the screen, and the inputs are cleared.
 function doMath(){
     var num1 = Number(document.getElementById('input1').value);
@@ -34,7 +35,9 @@ function clearAll(){
     document.getElementById('results').innerHTML = '';
 }
 
-// add comment here
+// the chooseOperation() function allows the user to choose
+// the type of calculation they want to perform by clicking
+// the operator button to toggle between options. 
 function chooseOperation(){
     var operator = document.getElementById('operation').value;
     if (operator === '+') {

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- WEB CALCULATOR: Adds two numbers together.-->
+<!-- WEB CALCULATOR: adds, subtracts, multiplies, and divides two numbers.-->
 
 <html lang="en">
 <head>
@@ -15,9 +15,9 @@
 <body>
     <div class="container">
         <h1 id="title">Web Calculator</h1>
-        <h4 id="instructions">pick two NUMBERS, choose your OPERATOR, and send it through.</h4>
+        <h4 id="instructions">pick two NUMBERS, click to choose your OPERATOR, and send it through.</h4>
         <input type="number" id="input1">
-        <input type="button" value="+" id="operation" onclick="chooseOperation()"/>
+        <input class="button" title="switch operator" type="button" value="+" id="operation" onclick="chooseOperation()"/>
         <input type="number" id="input2">
         <input type="submit" value="=" id="submitButton" onclick="doMath()">
         <input type="submit" value="clear" id="clearButton" onclick="clearAll()">
