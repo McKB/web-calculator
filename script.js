@@ -9,22 +9,19 @@ function doMath(){
     var operator = document.getElementById('operation').value;
     var result = document.getElementById('results');
     var answer;
+    clearAll();
     if (operator === '+') {
         answer = num1 + num2;
-        clearAll();
-        result.innerHTML = (num1 + " + " + num2 + " = " + answer);
+        result.innerHTML = (`${num1} + ${num2} = ${answer}`);
     } else if (operator === '-') {
         answer = num1 - num2;
-        clearAll();
-        result.innerHTML = (num1 + " - " + num2 + " = " + answer);
+        result.innerHTML = (`${num1} - ${num2} = ${answer}`);
     } else if (operator === "x") {
         answer = num1 * num2;
-        clearAll();
-        result.innerHTML = (num1 + " x " + num2 + " = " + answer);
+        result.innerHTML = (`${num1} x ${num2} = ${answer}`);
     } else {
         answer = num1 / num2;
-        clearAll();
-        result.innerHTML = (num1 + " / " + num2 + " = " + answer);
+        result.innerHTML = (`${num1} / ${num2} = ${answer}`);
     }
 }
 
@@ -42,16 +39,12 @@ function chooseOperation(){
     var operator = document.getElementById('operation').value;
     if (operator === '+') {
         document.getElementById('operation').value = '-';
-        operator = '-';
     } else if (operator === '-') {
         document.getElementById('operation').value = 'x';
-        operator = 'x';
     } else if (operator === 'x') {
         document.getElementById('operation').value = '/';
-        operator = '/';
     } else {
         document.getElementById('operation').value = '+';
-        operator = '+';
     };
     return operator;
 }
