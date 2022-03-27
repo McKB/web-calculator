@@ -14,7 +14,6 @@ body {
     color: rgb(78, 78, 14);
     font-family: 'Andale Mono', Courier, monospace;
     letter-spacing: 2px;
-    /*background-color: rgb(231, 231, 184); */
     background:
         linear-gradient(rgb(231, 231, 184), white);
 }
@@ -46,11 +45,14 @@ input {
     background-color: rgb(252, 252, 232);
 }
 
-#plus{
+#operation{
     grid-area: plus;
     justify-self: center;
-    padding: 0 10px;
-    margin: 5px 0px;
+    padding: 0 7px;
+    margin: 5px 10px;
+    background-color: rgb(184, 184, 107);
+    color: rgb(78, 78, 14);
+    cursor: pointer;
 }
 
 #input2{
@@ -65,7 +67,6 @@ input {
     justify-self: center;
     margin: 5px 0px 5px 10px;
     background-color: rgb(184, 184, 107);
-    /*border: 1px solid rgb(78, 78, 14);*/
     color:rgb(78, 78, 14);
     cursor: pointer;
 }
@@ -75,7 +76,6 @@ input {
     margin: 5px 0px;
     padding: 5px;
     background-color: rgb(184, 184, 107);
-    /*border: 1px solid rgb(78, 78, 14);*/
     color: rgb(78, 78, 14);
     cursor: pointer;
 }
